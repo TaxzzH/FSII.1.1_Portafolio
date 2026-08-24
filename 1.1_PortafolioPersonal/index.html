@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tomás · Portafolio — Ingeniería Informática</title>
+<meta name="description" content="Portafolio de Tomás, estudiante de Ingeniería en Informática. Proyectos de backend, bases de datos y desarrollo web.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ======================================================
+     NAVEGACIÓN
+====================================================== -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#inicio" class="nav__brand">
+      <span class="nav__brand-mark">TH</span>
+      <span class="nav__brand-text">TOMÁS <span class="dim">// ING. INFORMÁTICA</span></span>
+    </a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="#inicio" class="nav__link active-link" data-nav> Inicio </a>
+      <a href="#sobre-mi" class="nav__link" data-nav> Sobre mí </a>
+      <a href="#proyectos" class="nav__link" data-nav> Proyectos </a>
+      <a href="#habilidades" class="nav__link" data-nav> Habilidades </a>
+      <a href="#contacto" class="nav__link nav__link--cta" data-nav> Contacto </a>
+    </nav>
+
+    <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ======================================================
+       HERO
+  ====================================================== -->
+  <section id="inicio" class="hero blueprint-corners">
+    <p class="sheet-label">HOJA 01 / 05 — INICIO</p>
+
+    <div class="hero__content">
+      <p class="eyebrow">Portafolio técnico</p>
+      <h1 class="hero__title">
+        Construyo el <span class="accent">backend</span><br>
+        detrás de la interfaz.
+      </h1>
+      <p class="hero__subtitle">
+        Estudiante de Ingeniería en Informática.
+        Me interesan las bases de datos, la arquitectura de software y la lógica que hace
+        funcionar los sistemas por dentro.
+      </p>
+      <div class="hero__actions">
+        <a href="#proyectos" class="btn btn--primary">Ver proyectos</a>
+        <a href="#contacto" class="btn btn--ghost">Contactarme</a>
+      </div>
+    </div>
+
+    <div class="hero__diagram" aria-hidden="true">
+      <svg id="schemaSvg" viewBox="0 0 800 560" xmlns="http://www.w3.org/2000/svg">
+        <!-- líneas de conexión -->
+        <line class="schema-line" x1="400" y1="280" x2="150" y2="110"></line>
+        <line class="schema-line" x1="400" y1="280" x2="650" y2="110"></line>
+        <line class="schema-line" x1="400" y1="280" x2="150" y2="450"></line>
+        <line class="schema-line" x1="400" y1="280" x2="650" y2="450"></line>
+
+        <!-- nodo central -->
+        <g class="schema-node schema-node--hub">
+          <rect x="330" y="240" width="140" height="80" rx="6"></rect>
+          <text x="400" y="275" text-anchor="middle">TOMÁS</text>
+          <text x="400" y="295" text-anchor="middle" class="node-sub">CORE</text>
+        </g>
+
+        <!-- nodos externos -->
+        <g class="schema-node">
+          <rect x="70" y="80" width="160" height="60" rx="4"></rect>
+          <text x="150" y="105" text-anchor="middle">FRONTEND</text>
+          <text x="150" y="122" text-anchor="middle" class="node-sub">HTML · CSS · JS</text>
+        </g>
+
+        <g class="schema-node">
+          <rect x="570" y="80" width="160" height="60" rx="4"></rect>
+          <text x="650" y="105" text-anchor="middle">BACKEND</text>
+          <text x="650" y="122" text-anchor="middle" class="node-sub">JAVA · SPRING BOOT</text>
+        </g>
+
+        <g class="schema-node">
+          <rect x="70" y="420" width="160" height="60" rx="4"></rect>
+          <text x="150" y="445" text-anchor="middle">BASES DE DATOS</text>
+          <text x="150" y="462" text-anchor="middle" class="node-sub">SQL · PL/SQL</text>
+        </g>
+
+        <g class="schema-node">
+          <rect x="570" y="420" width="160" height="60" rx="4"></rect>
+          <text x="650" y="445" text-anchor="middle">APIs &amp; TESTING</text>
+          <text x="650" y="462" text-anchor="middle" class="node-sub">REST · MOCKITO</text>
+        </g>
+      </svg>
+    </div>
+
+    <a href="#sobre-mi" class="scroll-cue" aria-label="Bajar a la siguiente sección">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ======================================================
+       SOBRE MÍ
+  ====================================================== -->
+  <section id="sobre-mi" class="section about blueprint-corners">
+    <p class="sheet-label">HOJA 02 / 05 — SOBRE MÍ</p>
+    <h2 class="section__title"><span class="section__num">02</span> Sobre mí</h2>
+
+    <div class="about__grid">
+      <div class="about__text">
+        <p>
+          "Actualmente estoy formalizando mis conocimientos en computación cursando la
+          carrera de Ingeniería en Informática y Telecomunicaciones. En el trayecto he indagado en diversos
+          lenguajes, pero sintiendo especial comodidad con el area Backend y Bases de Datos". 
+        </p>
+      </div>
+
+      <dl class="spec-sheet">
+        <div class="spec-sheet__row">
+          <dt>Ubicación</dt>
+          <dd>Chile</dd>
+        </div>
+        <div class="spec-sheet__row">
+          <dt>Formación</dt>
+          <dd>Estudiante de Ing. en Informática, DuocUC</dd>
+        </div>
+        <div class="spec-sheet__row">
+          <dt>Experiencia</dt>
+          <dd>4 años programando</dd>
+        </div>
+        <div class="spec-sheet__row">
+          <dt>Enfoque</dt>
+          <dd>Backend, bases de datos y arquitectura</dd>
+        </div>
+        <div class="spec-sheet__row">
+          <dt>Stack principal</dt>
+          <dd>Java · Spring Boot · SQL/PL-SQL · JS</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       PROYECTOS
+  ====================================================== -->
+  <section id="proyectos" class="section projects blueprint-corners">
+    <p class="sheet-label">HOJA 03 / 05 — PROYECTOS</p>
+    <h2 class="section__title"><span class="section__num">03</span> Proyectos</h2>
+
+    <div class="projects__grid" id="projectsGrid">
+      <!-- Las tarjetas se generan dinámicamente desde script.js (projectsData) -->
+    </div>
+  </section>
+
+  <!-- ======================================================
+       HABILIDADES
+  ====================================================== -->
+  <section id="habilidades" class="section skills blueprint-corners">
+    <p class="sheet-label">HOJA 04 / 05 — HABILIDADES</p>
+    <h2 class="section__title"><span class="section__num">04</span> Habilidades</h2>
+
+    <div class="skills__grid">
+      <div class="skills__module">
+        <h3 class="skills__module-title">Lenguajes</h3>
+        <ul class="chip-list">
+          <li class="chip">HTML</li>
+          <li class="chip">CSS</li>
+          <li class="chip">JavaScript</li>
+          <li class="chip">Java</li>
+          <li class="chip">SQL / PL-SQL</li>
+          <li class="chip">Kotlin</li>
+          <li class="chip">Python</li>
+          <li class="chip">C</li>
+        </ul>
+      </div>
+
+      <div class="skills__module">
+        <h3 class="skills__module-title">Frameworks &amp; herramientas</h3>
+        <ul class="chip-list">
+          <li class="chip">Spring Boot</li>
+          <li class="chip">Maven</li>
+          <li class="chip">JUnit / Mockito</li>
+          <li class="chip">Git &amp; GitHub</li>
+        </ul>
+      </div>
+
+      <div class="skills__module">
+        <h3 class="skills__module-title">Bases de datos</h3>
+        <ul class="chip-list">
+          <li class="chip">Oracle</li>
+          <li class="chip">Modelado relacional</li>
+          <li class="chip">SQL avanzado</li>
+        </ul>
+      </div>
+
+      <div class="skills__module">
+        <h3 class="skills__module-title">Arquitectura &amp; prácticas</h3>
+        <ul class="chip-list">
+          <li class="chip">Microservicios</li>
+          <li class="chip">REST APIs</li>
+          <li class="chip">Testing unitario</li>
+          <li class="chip">Control de versiones</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       CONTACTO
+  ====================================================== -->
+  <section id="contacto" class="section contact blueprint-corners">
+    <p class="sheet-label">HOJA 05 / 05 — CONTACTO</p>
+    <h2 class="section__title"><span class="section__num">05</span> Contacto</h2>
+
+    <div class="contact__panel">
+      <p class="contact__lead">
+        ¿Buscas a alguien para una práctica o un proyecto? Escríbeme.
+      </p>
+
+      <dl class="spec-sheet spec-sheet--contact">
+        <div class="spec-sheet__row">
+          <dt>Email</dt>
+          <dd><a href="mailto:tu-correo@ejemplo.com" class="link">toa.herrera@duocuc.cl</a></dd>
+        </div>
+        <div class="spec-sheet__row">
+          <dt>GitHub</dt>
+          <dd><a href="https://github.com/TaxzzH" target="_blank" rel="noopener noreferrer" class="link">github.com/TaxzzH</a></dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Diseñado y construido con HTML, CSS y JS · <span id="year"></span></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
