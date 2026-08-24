@@ -27,7 +27,7 @@ const projectsData = [
     code: "P-03",
     title: "Observabilidad Con AWS",
     description:
-      "Uso de diversas herramientas aplicadas dentro de un repositorio en GitHub" +
+      "Uso de diversas herramientas aplicadas dentro de un repositorio en GitHub " +
       "para monitorear el flujo de datos interno y controlar escalabilidad del " +
       "microservicio en cuestion.",
     stack: ["Microservicios", "Pormtail", "Prometheus", "Grafana Loki"],
